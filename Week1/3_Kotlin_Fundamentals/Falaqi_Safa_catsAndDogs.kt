@@ -3,23 +3,22 @@ import kotlin.random.Random
 fun main() {
     //Cats and Dogs
     //Create an abstract class Animal with attributes name and age and abstract function talk
-    abstract class Animal(val n: String, val a: Int){
-            val name = n
-            val age = a
+    abstract class Animal(val name: String, val age: Int){
+
         abstract fun talk()
     }
 
     //Create a class Dog that inherits Animal and barks ('Name: Woof')
-    class Dog( n: String, a: Int): Animal(n,a){
+    class Dog( name: String, age: Int): Animal(name,age){
         override fun talk() {
-            println("$n: Woof")
+            println("$name: Woof")
         }
     }
 
     //Create a class Cat that inherits Animal and meows ('Name: Meow')
-    class Cat(n: String,a: Int): Animal(n,a){
+    class Cat(name: String,age: Int): Animal(name,age){
         override fun talk() {
-            println("$n: Meow")
+            println("$name: Meow")
         }
     }
 
@@ -43,16 +42,14 @@ fun main() {
         catList[i].talk()
         //println("cat age: "+ catList[i].age+" ")
 
-            //also use a nested loop to make each dog bark if they are older than the meowing cat
-            for(j in 0..4)
+        //also use a nested loop to make each dog bark if they are older than the meowing cat
+        for(j in 0..4)
+        {
+            //println("dog age: "+ dogList[j].age+" ")
+            if(dogList[j].age>catList[i].age)
             {
-                //println("dog age: "+ dogList[j].age+" ")
-                if(dogList[j].age>catList[i].age)
-                {
-                    dogList[j].talk()
-                }
+                dogList[j].talk()
             }
+        }
     }
-
-
 }
