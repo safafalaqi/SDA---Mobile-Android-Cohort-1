@@ -10,7 +10,7 @@ fun main() {
         // Ask users to enter a country and save it as the key
         print("country: ")
 
-        // Ask user to enter a capital and save it as the value
+        
         var country = readLine()!!
             //make sure is not empty input
             while(country.isEmpty())
@@ -18,6 +18,8 @@ fun main() {
              print("Please enter a country: ")
                 country = readLine()!!
             }
+            
+        // Ask user to enter a capital and save it as the value
         print("capital city: ")
         var capital = readLine()!!
             //make sure is not empty input
@@ -26,6 +28,7 @@ fun main() {
               print("Please enter a capital city: ")
                 capital = readLine()!!
             }
+            
        //add key and value to the mutable map
         matching.put(country,capital)
     }
