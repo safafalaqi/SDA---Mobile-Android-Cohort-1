@@ -1,0 +1,52 @@
+{
+    "contacts": [{
+            "name": "Abdul",
+            "age": 21,
+            "location": "Saudi Arabia",
+            "blood group": "B+",
+
+
+            "mobile": {
+                "personal": "+00 9876543210",
+                "home": "044-482248682"
+            }
+        },
+        {
+            "name": "Rahman",
+            "age": 22,
+            "location": "South Africa",
+            "blood group": "A+",
+
+
+            "mobile": {
+                "personal": "+00 9876234210",
+                "home": "044-872248682"
+            }
+        },
+        {
+            "name": "King",
+            "age": 32,
+            "location": "England",
+            "blood group": "B+",
+
+
+            "mobile": {
+                "personal": "+00 9876542210",
+                "home": "044-212248682"
+            }
+        },
+        {
+            "name": "Prince",
+            "age": 19,
+            "location": "USA",
+            "blood group": "AB+",
+
+
+            "mobile": {
+                "personal": "+00 3876543210",
+                "home": "044-182248682"
+            }
+        }
+
+    ]
+}
